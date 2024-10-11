@@ -26,6 +26,7 @@ export const TaskName = styled.span`
   font-size: ${({ theme }) => theme.fonts.size.medium};
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.fonts.main};
+  margin-right: ${({ theme }) => theme.spacing.small};
 
   @media (max-width: 768px) {
     font-size: ${({ theme }) => theme.fonts.size.small};
@@ -93,6 +94,19 @@ export const StyledSpan = styled.span`
   font-family: ${({ theme }) => theme.fonts.main};
   margin-bottom: ${({ theme }) => theme.spacing.small};
   display: block;
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.fonts.size.small};
+  }
+`;
+
+export const UserName = styled.span`
+  font-size: ${({ theme }) => theme.fonts.size.small};
+  color: ${({ theme }) => theme.colors.text};
+  font-family: ${({ theme }) => theme.fonts.main};
+  margin-bottom: ${({ theme }) => theme.spacing.small};
+  display: block;
+  font-weight: bold;
 
   @media (max-width: 768px) {
     font-size: ${({ theme }) => theme.fonts.size.small};

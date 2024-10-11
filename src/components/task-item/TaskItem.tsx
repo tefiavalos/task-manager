@@ -8,6 +8,7 @@ import {
   DeleteButton,
   StyledSpan,
   NameContainer,
+  UserName,
 } from "./TaskItem.styled";
 
 import { useUsers } from "../../hooks/useUsers";
@@ -63,9 +64,9 @@ export const TaskItem: React.FC<TaskItemProps> = ({
             ))}
           </TaskSelect>
         ) : (
-          <StyledSpan>
+          <UserName>
             {users.find((user) => user.id === task.asignada_a)?.name || "Usuario no encontrado"}
-          </StyledSpan>
+          </UserName>
         )}
       </div>
       <TaskActions>
