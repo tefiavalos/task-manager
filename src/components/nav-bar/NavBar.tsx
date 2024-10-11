@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar, BrandLogo, LinksWrapper, Links, StyledLink, LogoutButton, Hamburger, Brand, Flex, StyledLinkBrand } from "./NavBar.styled";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import logo from '../../assets/logo.png';
 
