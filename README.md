@@ -50,7 +50,7 @@ El servidor correrá en `http://localhost:5001`. Puedes acceder a la API en esta
 
 - **Crear proyectos**: Puedes agregar un nuevo proyecto desde el panel de administración.
 - **Asignar tareas**: Los administradores pueden crear y asignar tareas a los usuarios.
-- **Gestión de usuarios**: El administrador tiene acceso a gestionar los usuarios.
+- Users de test: usuario@example.com (pass user123), admin@example.com (pass admin123)
 
 ## Contribuir
 
