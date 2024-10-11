@@ -22,7 +22,7 @@ export const Container = styled.form`
 export const StyledLabel = styled.label`
   grid-column: 1 / -1;
   font-size: ${({ theme }) => theme.fonts.size.large};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.importantText};
   font-weight: bold;
   font-family: ${({ theme }) => theme.fonts.main};
 

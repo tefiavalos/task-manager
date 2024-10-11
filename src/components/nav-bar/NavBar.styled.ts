@@ -7,7 +7,7 @@ export const NavBar = styled.nav`
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: ${({ theme }) => theme.spacing.medium};
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary};
   color: #fff;
   font-family: ${({ theme }) => theme.fonts.main};
   position: relative;
@@ -20,12 +20,41 @@ export const NavBar = styled.nav`
   }
 `;
 
+export const StyledLinkBrand = styled(Link)`
+  text-decoration: none;
+  color: #f4f1de;
+  font-size: ${({ theme }) => theme.fonts.size.medium};
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`;
+
+
+export const Flex = styled.div`
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+  align-items: center
+`;
+
 export const Brand = styled.div`
-  font-size: ${({ theme }) => theme.fonts.size.extraLarge};
+  font-size: ${({ theme }) => theme.fonts.size.large};
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.brand};
+  color: ${({ theme }) => theme.colors.inputBackground};
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const BrandLogo = styled.img`
+  width: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
@@ -65,12 +94,12 @@ export const Links = styled.div`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #f4f1de;
+  color: ${({ theme }) => theme.colors.importantText};
   font-size: ${({ theme }) => theme.fonts.size.medium};
   transition: color 0.3s ease;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
 

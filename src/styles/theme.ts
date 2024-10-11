@@ -1,15 +1,15 @@
 export const theme = {
   colors: {
-    primary: "#4a4e69",
+    primary: "#f2a65a",
     secondary: "#9a8c98",
-    background: "#fffaf3",
+    background: "#4a4e69",
+    importantText: "#f4f1de",
     text: "#22223b",
-    inputBackground: "#f4f1de",
+    inputBackground: "#e1d9a5",
     inputBorder: "#9a8c98",
     error: "#e63946",
     success: "#2ecc71",
     buttonBackground: "#f2a65a",
-    brand: "#f2a65a",
   },
   fonts: {
     main: "'Poppins', Arial, sans-serif",

@@ -1,7 +1,9 @@
 import React from "react";
-import { NavBar, Brand, LinksWrapper, Links, StyledLink, LogoutButton, Hamburger } from "./NavBar.styled";
-import { useNavigate } from "react-router-dom";
+import { NavBar, BrandLogo, LinksWrapper, Links, StyledLink, LogoutButton, Hamburger, Brand, Flex, StyledLinkBrand } from "./NavBar.styled";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import logo from '../../assets/logo.png';
+
 
 export const NavBarComponent: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,12 @@ export const NavBarComponent: React.FC = () => {
 
   return (
     <NavBar>
-      <Brand onClick={() => navigate("/")}>Task Manager</Brand>
+      <StyledLinkBrand to="/">
+      <Flex>
+        <BrandLogo src={logo} alt="Task Manager Logo" />
+        <Brand>Task Manager</Brand>
+        </Flex>
+      </StyledLinkBrand>
       <Hamburger onClick={toggleMenu}>
         <span />
         <span />
